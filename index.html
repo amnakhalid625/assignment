@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add Events on the sheet</h1>
+    <P id="para">when you click on the button change the text color</P>
+    <button id="btn">click me</button>
+
+
+    <script>
+let getPara=document.getElementById('para')
+console.log(getPara.innerText);
+let getButton=document.getElementById('btn')
+
+
+
+const changePara=()=>{
+    getPara.style.color='red'
+}
+getButton.addEventListener('click',changePara)
+
+    </script>
+</body>
+</html>
